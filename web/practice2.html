@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice2.css">
+    <title>Language Practice Section</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>LearnHub</h1>
+        <nav>
+            <ul>
+                <li><a href="page3.html">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="sample\1.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Practice Section -->
+    <section class="practice-container">
+        <h2>Language Practice</h2>
+        <p>Enhance your language skills through a variety of interactive exercises:</p>
+
+        <!-- Exercise 1: Vocabulary -->
+        <div class="exercise" id="vocabulary-exercise">
+            <h3>Vocabulary Exercise</h3>
+            <p>Translate the following words from English to the target language:</p>
+            <ul>
+                <li>Book - <input type="text" id="word1"></li>
+                <li>Hello - <input type="text" id="word2"></li>
+                <li>Goodbye - <input type="text" id="word3"></li>
+            </ul>
+            <button onclick="checkVocabularyExercise()">Check Answers</button>
+        </div>
+
+        <!-- Exercise 2: Sentences -->
+        <div class="exercise" id="sentence-exercise">
+            <h3>Sentence Exercise</h3>
+            <p>Translate the following sentences from English to the target language:</p>
+            <ul>
+                <li>I love learning languages. - <input type="text" id="sentence1"></li>
+                <li>This is my favorite language learning platform. - <input type="text" id="sentence2"></li>
+            </ul>
+            <button onclick="checkSentenceExercise()">Check Answers</button>
+        </div>
+
+        <!-- Exercise 3: Matching Pairs -->
+        <div class="exercise" id="matching-pairs-exercise">
+            <h3>Matching Pairs Exercise</h3>
+            <p>Match the words with their correct translations:</p>
+            <ul>
+                <li>Table - <select id="pair1">
+                    <option value="select">Select</option>
+                    <option value="table">Table</option>
+                    <option value="chair">Chair</option>
+                    <option value="book">Book</option>
+                </select></li>
+                <li>Chair - <select id="pair2">
+                    <option value="select">Select</option>
+                    <option value="table">Table</option>
+                    <option value="chair">Chair</option>
+                    <option value="book">Book</option>
+                </select></li>
+            </ul>
+            <button onclick="checkMatchingPairs()">Check Answers</button>
+        </div>
+
+        <!-- Exercise 4: Image-to-Word Matching -->
+        <div class="exercise" id="image-word-matching-exercise">
+            <h3>Image-to-Word Matching Exercise</h3>
+            <p>Match the images with their corresponding words:</p>
+            <ul>
+                <li><img src="Tree.jpg" alt="Image 1">  <select id="imageWord1">
+                    <option value="select">Select</option>
+                    <option value="apple">Apple</option>
+                    <option value="tree">Tree</option>
+                    <option value="car">Car</option>
+                </select></li>
+                <li><img src="Apple.jpg" alt="Image 2">  <select id="imageWord2">
+                    <option value="select">Select</option>
+                    <option value="apple">Apple</option>
+                    <option value="tree">Tree</option>
+                    <option value="car">Car</option>
+                </select></li>
+            </ul>
+            <button onclick="checkImageWordMatching()">Check Answers</button>
+        </div>
+
+        <!-- Exercise 5: Fill in the Blank -->
+        <div class="exercise" id="fill-in-the-blank-exercise">
+            <h3>Fill in the Blank Exercise</h3>
+            <p>Complete the sentences by filling in the blanks:</p>
+            <ul>
+                <li>The ____________ is on the table. - <input type="text" id="blank1"></li>
+                <li>She has a ____________ car. - <input type="text" id="blank2"></li>
+            </ul>
+            <button onclick="checkFillInTheBlank()">Check Answers</button>
+        </div>
+
+        <!-- Feedback Section -->
+        <div id="feedback"></div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Updated Quiz Section -->
+
+<section class="quiz-container">
+    <h2>Language Quiz For French</h2>
+    <p>Test your French language skills with this quiz:</p>
+
+    <!-- Question 1 -->
+    <div class="quiz-question" id="question1">
+        <h3>1. What does "Bonjour" mean?</h3>
+        <ul>
+            <li><input type="radio" name="q1" value="A">Goodbye</li>
+            <li><input type="radio" name="q1" value="B">Hello</li>
+            <li><input type="radio" name="q1" value="C">Thank you</li>
+        </ul>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="quiz-question" id="question2">
+        <h3>2.Translate the word "Livre" to English.</h3>
+        <ul>
+            <li><input type="radio" name="q2" value="A">Table</li>
+            <li><input type="radio" name="q2" value="B">Book</li>
+            <li><input type="radio" name="q2" value="C">Chair</li>
+        </ul>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="quiz-question" id="question3">
+        <h3>3. What is the French word for "Thank you"?</h3>
+        <ul>
+            <li><input type="radio" name="q3" value="A">Merci</li>
+            <li><input type="radio" name="q3" value="B">Bonjour</li>
+            <li><input type="radio" name="q3" value="C">Au revoir</li>
+        </ul>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="quiz-question" id="question4">
+        <h3>4. Which phrase means "My name is" in French?</h3>
+        <ul>
+            <li><input type="radio" name="q4" value="A">Comment ça va ?</li>
+            <li><input type="radio" name="q4" value="B">Je m'appelle</li>
+            <li><input type="radio" name="q4" value="C">Oui</li>
+        </ul>
+    </div>
+
+    <button onclick="submitQuiz()">Submit Quiz</button>
+
+    <!-- Quiz Feedback Section -->
+    <div id="quiz-feedback"></div>
+</section>
+<script src="1.js"></script>
+</body>
+</html>

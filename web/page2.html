@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Language Converter</title>
+</head>
+<body>
+
+    <div class="converter-container">
+        <h1>Language Converter</h1>
+
+        <div class="input-group">
+            <label for="inputLanguage">Input Language:</label>
+            <select id="inputLanguage">
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="it">Italian</option>
+    <option value="ja">Japanese</option>
+    <option value="ko">Korean</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="outputLanguage">Output Language:</label>
+            <select id="outputLanguage">
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="it">Italian</option>
+    <option value="ja">Japanese</option>
+    <option value="ko">Korean</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="inputText">Enter text:</label>
+            <textarea id="inputText" placeholder="Enter text"></textarea>
+        </div>
+
+        <button onclick="convertText()">Convert</button>
+
+        <div class="output-group">
+            <label for="outputText">Converted text:</label>
+           
+            <textarea id="outputText" placeholder="converted text will appear here"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
